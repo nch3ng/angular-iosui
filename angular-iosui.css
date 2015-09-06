@@ -140,4 +140,8 @@ input {
   top: -9px;
   width: 24px; }
 
+/* line 158, /Users/NateCheng/Projects/angular-iosui/angular-iosui.scss */
+.disable {
+  margin-left: 0px !important; }
+
 /*# sourceMappingURL=angular-iosui.css.map */

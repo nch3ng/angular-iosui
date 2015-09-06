@@ -2,15 +2,15 @@ var ROUND_SWITCH_TEMPLAGE = '<div class="switch"> \
                               <input id="switch-toggle-{{index}}" ng-model="ngModel" name="{{name}}" class="switch-toggle" type="checkbox"></input> \
                               <label for="switch-toggle-{{index}}" ng-attr-style="width: {{switchWidth}}px; height: {{switchHeight}}px; border-radius:{{switchHeight}}px; -webkit-border-radius: {{switchHeight}}px; -moz-border-radius: {{switchHeight}}px;-ms-border-radius:{{switchHeight}}px; -o-border-radius: {{switchHeight}}px;"> \
                               <span class="switch_base" ng-attr-style="top: {{borderWidth}}px; bottom: {{borderWidth}}px; left: {{borderWidth}}px; right:{{borderWidth}}px;border-radius:{{switchHeight}}px; -webkit-border-radius: {{switchHeight}}px; -moz-border-radius: {{switchHeight}}px;-ms-border-radius:{{switchHeight}}px; -o-border-radius: {{switchHeight}}px;"></span> \
-                              <span class="switch_control" ng-style="ngModel==false && {\'margin-left\': 0} || {\'margin-left\': switchHeight}" ng-attr-style="width: {{ballSize}}px; border-radius: {{ballSize}}px; -webkit-border-radius: {{ballSize}}px; -moz-border-radius: {{ballSize}}px;-ms-border-radius:{{ballSize}}px; -o-border-radius: {{ballSize}}px; top: {{innerPadding}}px;left: {{innerPadding}}px;bottom: {{innerPadding}}px;"></span></label> \
+                              <span class="switch_control" ng-class="{\'disable\': !ngModel}" ng-attr-style="width: {{ballSize}}px; border-radius: {{ballSize}}px; -webkit-border-radius: {{ballSize}}px; -moz-border-radius: {{ballSize}}px;-ms-border-radius:{{ballSize}}px; -o-border-radius: {{ballSize}}px; top: {{innerPadding}}px;left: {{innerPadding}}px;bottom: {{innerPadding}}px; margin-left: {{switchHeight}}px;"></span></label> \
                             </div>';
 
 var SLIDER_TEMPLAGE = '<div class="slider"> \
                         <span class="angular-sliderbar"> \
-                          <span class="angular-slider-ball" ng-attr-style="left: {{pos}}"></span> \
+                          <span class="angular-slider-ball" ng-attr-style="left: {{pos}}px"></span> \
                           <span class="angular-slider-min">{{min}}</span> \
                           <span class="angular-slider-max">{{max}}</span> \
-                          <span class="angular-slider-quantity" ng-attr-style="width:{{pos}}"></span> \
+                          <span class="angular-slider-quantity" ng-attr-style="width:{{pos}}px"></span> \
                         </span> \
                       </div>';
 
@@ -117,6 +117,7 @@ angular.module("angular-iosui", [])
       scope.$watch('widthO', function(){
         scope.switchWidth = scope.widthO;
         scope.switchHeight=scope.switchWidth/2;
+        console.log(scope.switchHeight);
         ballSize = scope.switchHeight - (2*scope.innerPadding); 
         scope.ballSize = ballSize;
         //console.log("Change: " +);
@@ -134,6 +135,13 @@ angular.module("angular-iosui", [])
         ballSize = scope.switchHeight - (2*scope.innerPadding); 
         scope.ballSize = ballSize;
       });
+      
+      scope.getStyle = function(){
+        console.log("getStyle");
+        return {
+          'margin-left': "10px"
+        };
+      }
     }
   }
 }]);
