@@ -1,0 +1,143 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+/* line 8, /Users/NateCheng/Projects/angular-iosui/angular-iosui.scss */
+body {
+  font-family: 'Roboto', sans-serif; }
+
+/* line 12, /Users/NateCheng/Projects/angular-iosui/angular-iosui.scss */
+*, span.switch_base, span.switch_control {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 18, /Users/NateCheng/Projects/angular-iosui/angular-iosui.scss */
+input + label {
+  padding: 2px;
+  width: 100px;
+  height: 50px;
+  background-color: #dddddd;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 100px;
+  -webkit-transition: background 0.4s;
+  -moz-transition: background 0.4s;
+  -o-transition: background 0.4s;
+  transition: background 0.4s;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+/* line 43, /Users/NateCheng/Projects/angular-iosui/angular-iosui.scss */
+span.switch_base, span.switch_control {
+  display: block;
+  position: absolute;
+  content: ""; }
+
+/* line 49, /Users/NateCheng/Projects/angular-iosui/angular-iosui.scss */
+span.switch_base {
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  background-color: #fff;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
+  -webkit-transition: background 0.4s;
+  -moz-transition: background 0.4s;
+  -o-transition: background 0.4s;
+  transition: background 0.4s; }
+
+/* line 66, /Users/NateCheng/Projects/angular-iosui/angular-iosui.scss */
+span.switch_control {
+  top: 4px;
+  left: 4px;
+  bottom: 4px;
+  width: 42px;
+  background-color: #dddddd;
+  -webkit-border-radius: 42px;
+  -moz-border-radius: 42px;
+  -ms-border-radius: 42px;
+  -o-border-radius: 42px;
+  border-radius: 42px;
+  -webkit-transition: margin 0.4s, background 0.4s;
+  -moz-transition: margin 0.4s, background 0.4s;
+  -o-transition: margin 0.4s, background 0.4s;
+  transition: margin 0.4s, background 0.4s; }
+
+/* line 83, /Users/NateCheng/Projects/angular-iosui/angular-iosui.scss */
+input:checked + label {
+  background-color: #8ce196; }
+
+/* line 87, /Users/NateCheng/Projects/angular-iosui/angular-iosui.scss */
+input:checked + label > span.switch_control {
+  margin-left: 50px;
+  background-color: #8ce196; }
+
+/* line 92, /Users/NateCheng/Projects/angular-iosui/angular-iosui.scss */
+input {
+  display: none; }
+
+/* line 103, /Users/NateCheng/Projects/angular-iosui/angular-iosui.scss */
+.slider {
+  width: 250px;
+  margin: 30px; }
+
+/* line 108, /Users/NateCheng/Projects/angular-iosui/angular-iosui.scss */
+.angular-sliderbar {
+  background-color: #a9acb1;
+  border-radius: 15px;
+  display: block;
+  height: 4px;
+  position: relative;
+  width: 100%; }
+
+/* line 118, /Users/NateCheng/Projects/angular-iosui/angular-iosui.scss */
+.angular-slider-ball {
+  background-color: #fff;
+  border-radius: 100%;
+  cursor: move;
+  height: 30px;
+  left: 0;
+  top: -13px;
+  position: absolute;
+  width: 30px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4); }
+
+/* line 131, /Users/NateCheng/Projects/angular-iosui/angular-iosui.scss */
+.angular-slider-max {
+  right: -30px; }
+
+/* line 135, /Users/NateCheng/Projects/angular-iosui/angular-iosui.scss */
+.angular-slider-min {
+  left: -30px; }
+
+/* line 139, /Users/NateCheng/Projects/angular-iosui/angular-iosui.scss */
+.angular-slider-quantity {
+  background-color: #017afd;
+  border-radius: 15px;
+  display: block;
+  height: 100%;
+  width: 0; }
+
+/* line 147, /Users/NateCheng/Projects/angular-iosui/angular-iosui.scss */
+.angular-slider-min, .angular-slider-max {
+  color: #181819;
+  font-size: 12px;
+  height: 20px;
+  padding-top: 4px;
+  position: absolute;
+  text-align: center;
+  top: -9px;
+  width: 24px; }
+
+/*# sourceMappingURL=angular-iosui.css.map */

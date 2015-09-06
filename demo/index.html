@@ -1,0 +1,64 @@
+<html ng-app="demoapp">
+<head>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+  <script src="../angular-iosui.js"></script>
+  <script src="demo.js"></script>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css">  
+  <link href="../angular-iosui.css" rel="stylesheet" type="text/css">  
+  
+  <style>
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+    .field {
+      margin:22px 0;
+      font-weight:700;
+    }
+    
+    .result {
+      margin: 16px 40px;
+      width:10%;
+      text-align:left;
+    }
+    .switch {
+      padding: 40px 0px;
+    }
+  </style>
+</head>
+<body ng-controller="mainCtrl">
+ 
+  <div class="row">
+    <div class="col-md-6" style="padding:40px;">
+      <div class="row">
+        <div class="col-sm-1 field">Size</div> 
+        <div class="col-sm-6"><ios-slider ng-model="size" value=100 max=400 min=50></ios-slider></div>
+        <div class="form-control col-sm-1 result">{{size}}</div>
+      </div>
+      <div class="row">
+        <div class="col-sm-1 field">Border</div>
+        <div class="col-sm-6"><ios-slider ng-model="border" value=3 max=12 min=1></ios-slider></div>
+        <div class="form-control col-sm-1 result">{{border}}</div>
+      </div>
+      <div class="row">
+        <div class="col-sm-1 field">Padding</div>
+        <div class="col-sm-6"><ios-slider ng-model="padding" value=4 max=8 min=1></ios-slider></div>
+        <div class="form-control col-sm-1 result">{{padding}}</div>
+      </div>
+      <div class="row">
+        <div class="col-sm-1 field"></div>
+        <div class="col-sm-6 field">Switch Value = </div>
+        <div class="form-control col-sm-1 result">{{checkboxModel.value}}</div>
+      </div>
+    </div>
+    <div class="col-md-6 switch">
+      <div class="row">
+        <ios-switch ng-model="checkboxModel.value" name="switch" width="100" width-o="size" border-o="border" padding-o="padding"></ios-switch>
+      </div>
+    </div>
+  </div>
+  
+  <!--<ios-switch name="switch2"></ios-switch>-->
+
+  
+</body>
+</html>
