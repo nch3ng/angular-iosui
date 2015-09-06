@@ -21,7 +21,7 @@
       text-align:left;
     }
     .switch {
-      padding: 40px 0px;
+      padding: 0px 40px;
     }
   </style>
 </head>
@@ -50,13 +50,10 @@
         <div class="form-control col-sm-1 result">{{checkboxModel.value}}</div>
       </div>
     </div>
-    <div class="col-md-6 switch">
-      <div class="row">
-        <ios-switch ng-model="checkboxModel.value" name="switch" width="100" width-o="size" border-o="border" padding-o="padding"></ios-switch>
-      </div>
-    </div>
   </div>
-  
+  <div class="row">
+      <ios-switch ng-model="checkboxModel.value" name="switch" width="100" width-o="size" border-o="border" padding-o="padding"></ios-switch>
+    </div>
   <!--<ios-switch name="switch2"></ios-switch>-->
 
   
