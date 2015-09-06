@@ -127,15 +127,12 @@ input {
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
 }
-
 .angular-slider-max {
     right: -30px;
 }
-
 .angular-slider-min {
     left: -30px;
 }
-
 .angular-slider-quantity {
     background-color: #017afd;
     border-radius: 15px;
@@ -143,7 +140,6 @@ input {
     height: 100%;
     width: 0;
 }
-
 .angular-slider-min, .angular-slider-max  {
     color: #181819;
     font-size: 12px;
@@ -154,7 +150,6 @@ input {
     top: -9px;
     width: 24px;
 }
-
 .disable {
   margin-left: 0px !important;
 }
